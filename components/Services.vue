@@ -2,9 +2,8 @@
 <section class="page-section bg-white" id="Kurse">
     <div class="container px-4 px-lg-5">
         <h2 class="text-center mt-0">Kurse</h2>
-        <hr class="divider" />
-        Alle Kurse finden in der Panoramastraße 40 in Wiesbaden statt. Derzeit kann nur telefonisch unter 0176 30678459 gebucht werden.
-        Da sich das Angebot im Aufbau befindet, können Einzeltermine mit individuelller Preisgestaltung vereinbart werden. 
+        <hr class="divider" /> 
+        <ContentDoc path="/kurse" />
         <div class="row gx-4 gx-lg-5">
             <div class="col-lg-6 col-md-12 text-center">
                 <div class="mt-4 card bg-light">
