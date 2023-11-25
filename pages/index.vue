@@ -4,8 +4,15 @@
 
 <template>
   <main>
-    <pre class="bg-danger">Index Page</pre>
-    <ContentDoc path="/home" />
-    <ContentDoc path="/about" />
+    <body id="page-top">
+      <AppNav />
+      <AppHeader />
+      <AboutMe />
+      <Chakra />
+      <Services />
+      <Contact />
+      <FooterSite />
+    
+    </body>
   </main>
 </template>
