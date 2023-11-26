@@ -30,3 +30,7 @@ h1,h2 {
 p {
     text-align: justify;
 }
+.chakraaufzählung {
+    font-size: 25px;
+    justify-content: center;
+}

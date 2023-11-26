@@ -3,7 +3,7 @@
     <div class="container px-3 px-lg-5">
       <div class="navbar-brand">
         <a href="#page-top" class="navbar-img-c mx-3"
-          ><img src="@/assets/img/lotus_logo_trans.png" class=""
+          ><img src="@/assets/img/queen_logo_trans.png" class=""
         /></a>
       </div>
 
