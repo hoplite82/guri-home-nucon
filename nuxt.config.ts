@@ -6,6 +6,7 @@
 export default defineNuxtConfig({
   ssr: true,
   app: {
+    baseURL: "/",
     head: {
       meta: [{charset: 'utf-8'},{name: 'viewport', content: "width=device-width, initial-scale=1, shrink-to-fit=no"}],
       
@@ -22,6 +23,10 @@ export default defineNuxtConfig({
   },
   devtools: { enabled: true },
   modules: ['@nuxt/content'],
-  css: ['~/assets/css/styles.css','~/assets/css/custom.css']
+  css: ['~/assets/css/styles.css','~/assets/css/custom.css'],
+  nitro: {
+    serveStatic: true
+  }
+
 
 })
