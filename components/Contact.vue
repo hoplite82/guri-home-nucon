@@ -3,11 +3,10 @@
       <div class="container px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
           <div class="col-lg-8 col-xl-6 text-center text-white">
-            <h2 class="mt-0">Let's Get In Touch!</h2>
+            <h2 class="mt-0">Kontakt</h2>
             <hr class="divider" />
             <p class="mb-5">
-              Ready to start your next project with us? Send us a messages and we will get back to
-              you as soon as possible!
+              
             </p>
           </div>
         </div>
@@ -30,9 +29,9 @@
                   placeholder="Enter your name..."
                   data-sb-validations="required"
                 />
-                <label for="name">Full name</label>
+                <label for="name">Vor und Nachname</label>
                 <div class="invalid-feedback" data-sb-feedback="name:required">
-                  A name is required.
+                  Name benötigt
                 </div>
               </div>
               <!-- Email address input-->
@@ -44,12 +43,12 @@
                   placeholder="name@example.com"
                   data-sb-validations="required,email"
                 />
-                <label for="email">Email address</label>
+                <label for="email">Email</label>
                 <div class="invalid-feedback" data-sb-feedback="email:required">
-                  An email is required.
+                  Email benötigt.
                 </div>
                 <div class="invalid-feedback" data-sb-feedback="email:email">
-                  Email is not valid.
+                  Email ist nicht valide.
                 </div>
               </div>
               <!-- Phone number input-->
@@ -58,12 +57,12 @@
                   class="form-control"
                   id="phone"
                   type="tel"
-                  placeholder="(123) 456-7890"
+                  placeholder="0156 35850456"
                   data-sb-validations="required"
                 />
-                <label for="phone">Phone number</label>
+                <label for="phone">Telefonnummer</label>
                 <div class="invalid-feedback" data-sb-feedback="phone:required">
-                  A phone number is required.
+                  Telefonnummer erwünscht.
                 </div>
               </div>
               <!-- Message input-->
@@ -76,9 +75,9 @@
                   style="height: 10rem"
                   data-sb-validations="required"
                 ></textarea>
-                <label for="message">Message</label>
+                <label for="message">Nachricht</label>
                 <div class="invalid-feedback" data-sb-feedback="message:required">
-                  A message is required.
+                  Nachricht benötigt.
                 </div>
               </div>
               <!-- Submit success message-->
@@ -87,8 +86,8 @@
               <!-- has successfully submitted-->
               <div class="d-none" id="submitSuccessMessage">
                 <div class="text-center mb-3">
-                  <div class="fw-bolder">Form submission successful!</div>
-                  To activate this form, sign up at
+                  <div class="fw-bolder">Nachricht übertragen.</div>
+                  Muss noch aktiviert werden.
                   <br />
                   <a href="https://startbootstrap.com/solution/contact-forms"
                     >https://startbootstrap.com/solution/contact-forms</a
@@ -114,7 +113,7 @@
         <div class="row gx-4 gx-lg-5 justify-content-center">
           <div class="col-lg-4 text-center mb-5 mb-lg-0">
             <i class="bi-phone fs-2 mb-3 text-muted"></i>
-            <div>+1 (555) 123-4567</div>
+            <div>0176 30678459</div>
           </div>
         </div>
       </div>
