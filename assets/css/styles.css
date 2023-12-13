@@ -74,7 +74,7 @@
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
   --bs-link-color: #ea02ff;
-  --bs-link-hover-color: #e39eea;
+  --bs-link-hover-color: #888888;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
 }
@@ -10922,7 +10922,8 @@ hr.divider-light {
     color: white;
   }
   #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link:hover {
-    color: #af92b2;
+    color: var(--bs-link-hover-color);
+    co
   }
 }
 
