@@ -62,7 +62,7 @@
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
-  --bs-body-bg: #af92b2;
+  --bs-body-bg: rgb(206, 155, 164);
   --bs-border-width: 1px;
   --bs-border-style: solid;
   --bs-border-color: #dee2e6;
@@ -10910,20 +10910,19 @@ hr.divider-light {
   }
   #mainNav.navbar-shrink {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-    background-color: #af92b2;
+    background-color: var(--bs-body-bg);
   }
   #mainNav.navbar-shrink .navbar-brand {
     color: white;
   }
   #mainNav.navbar-shrink .navbar-brand:hover {
-    color: #af92b2;
+    color: var(--bs-body-bg);
   }
   #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link {
     color: white;
   }
   #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link:hover {
     color: var(--bs-link-hover-color);
-    co
   }
 }
 
