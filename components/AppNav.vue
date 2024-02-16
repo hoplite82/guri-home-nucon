@@ -21,9 +21,9 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ms-auto my-2 my-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#Kurse">Kurse</a></li>
           <li class="nav-item"><a class="nav-link" href="#aboutme">Über mich</a></li>
           <li class="nav-item"><a class="nav-link" href="#chakrayoga">Chakra-Yoga</a></li>
-          <li class="nav-item"><a class="nav-link" href="#Kurse">Kurse</a></li>
           <!--<li class="nav-item"><a class="nav-link" href="#Kurse">Feedbacks</a></li> -->
           <li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
         </ul>

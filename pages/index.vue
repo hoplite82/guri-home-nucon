@@ -7,9 +7,9 @@
     <body id="page-top">
       <AppNav />
       <AppHeader />
+      <Services />
       <AboutMe />
       <Chakra />
-      <Services />
       <Contact />
       <FooterSite />
     
