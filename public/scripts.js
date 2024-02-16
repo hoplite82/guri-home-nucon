@@ -57,7 +57,7 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
-
+/*
 if (window.netlifyIdentity) {
     window.netlifyIdentity.on("init", user => {
       if (!user) {
@@ -67,4 +67,4 @@ if (window.netlifyIdentity) {
       }
     });
   }
-
+*/
