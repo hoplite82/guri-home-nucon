@@ -6,16 +6,16 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: 'blog'
-    label: 'Blog'
-    folder: 'content/blog'
+  - name: 'textblock'
+    label: 'textblock'
+    folder: 'content/textblock'
     format: 'frontmatter'
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    slug: 'textblock-{{id}}'
     editor:
-      preview: false
+      preview: true
     fields:
+      - { label: 'id', name: 'id', widget: 'string' }
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Typ', name: 'typ', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
