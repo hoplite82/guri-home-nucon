@@ -17,5 +17,15 @@ collections:
     fields:
       - { label: 'id', name: 'id', widget: 'string' }
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Typ', name: 'typ', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'kurse'
+    label: 'kurse'
+    folder: 'content/kurse'
+    format: 'frontmatter'
+    create: true
+    slug: 'kurse-{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
