@@ -28,4 +28,7 @@ collections:
       preview: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'order', name: 'order', widget: 'number' }
+      - { label: 'show', name: 'show', widget: 'boolean', default: true }
+      - { label: 'overlayed', name: 'overlayed', widget: 'boolean', default: false }
       - { label: 'Body', name: 'body', widget: 'markdown' }
