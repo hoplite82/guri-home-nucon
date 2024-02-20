@@ -14,7 +14,7 @@
         <ContentList path="/kurse" v-slot="{ list }">
           <div v-for="kurs in list.filter((k) => k.show).sort((a, b) => a.order - b.order)" :key="kurs.order" class="col-lg-6 col-md-12 my-2">
             <div class="m-2 card bg-light text-center px-2" style="min-height: 100%" v-if="kurs.overlay">
-              <img class="card-img" src="/assets/img/coming-soon.png" style="max-height: 20%;width: auto;" alt="" />
+              <img class="card-img" src="/img/coming-soon.png" style="max-height: 20%;width: auto;" alt="" />
               <div class="card-img-overlay">
                 <div class="overlay-content">
                   <h4 class="m-2">{{ kurs.title }}</h4>

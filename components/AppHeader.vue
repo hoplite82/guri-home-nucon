@@ -5,7 +5,7 @@
         <div class="col-lg-8 align-self-end">
           <h1 class="text-white font-weight-bold">Chakra-Yoga</h1>
           <h3 class="text-white-75 mb-5 kaushan">Finde deine natürliche Balance</h3>
-          <!--<div><img class="" src="@/assets/img/Buddha.png" /></div>-->
+          <!--<div><img class="" src="@/img/Buddha.png" /></div>-->
         </div>
         <div class="col-lg-8 align-self-baseline">
           <!--  <a class="btn btn-primary btn-xl" href="#aboutme">Find Out More</a> -->
@@ -20,7 +20,7 @@ header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
   background: linear-gradient(to bottom, rgba(92, 77, 66, 0.4) 0%, rgba(92, 77, 66, 0.4) 100%),
-    url("@/assets/img/bg-masthead.jpg");
+    url("@/img/bg-masthead.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
