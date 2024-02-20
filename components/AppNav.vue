@@ -1,7 +1,7 @@
 <template>
 <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
     <div class="container px-3 px-lg-5">
-      <div class="navbar-brand">
+      <div class="navbar-brand mx-auto">
         <a href="#page-top" class="navbar-img-c mx-3"
           ><img src="@/assets/img/queen_logo_trans.png" class=""
         /></a>

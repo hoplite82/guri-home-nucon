@@ -15,6 +15,7 @@
   </header>
 </template>
 <style>
+/** 
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
@@ -50,4 +51,5 @@ header.masthead .h1 {
     font-size: 3.5rem;
   }
 }
+*/
 </style>

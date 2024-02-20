@@ -8,7 +8,9 @@
 
 <template>
   <main>
+   
     <body id="page-top">
+      
       <AppNav />
       <AppHeader />
       <Services />
@@ -16,7 +18,7 @@
       <Chakra />
       <Contact />
       <FooterSite />
-    
+      
     </body>
   </main>
 </template>
