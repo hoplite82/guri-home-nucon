@@ -31,10 +31,13 @@
         
         
         <div>
-          <img src="@/assets/img/chakras7.png" />
+          
+          <NuxtImg src="/img/chakras7.png" />
+          
         </div>
         <div>
         <h2>Hauptchakren</h2>  
+        
         <ol class="chakraaufzählung">
         <li > 
           <p class="fs-3">Muladhara Chakra - Wurzelchakra</p>

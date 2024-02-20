@@ -8,7 +8,7 @@ export default defineNuxtConfig({
   app: {
     baseURL: "/",
     head: {
-      meta: [{charset: 'utf-8'},{name: 'viewport', content: "width=device-width, initial-scale=1, shrink-to-fit=no"}],
+      meta: [{charset: 'utf-8'},{name: 'viewport', content: "width=device-width, initial-scale=1"}],
       
       link: [
         { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css' },
@@ -22,7 +22,7 @@ export default defineNuxtConfig({
     },
   },
   devtools: { enabled: true },
-  modules: ['@nuxt/content'],
+  modules: ['@nuxt/content', "@nuxt/image"],
   css: ['@/assets/scss/styles.scss','~/assets/css/custom.css'],
   nitro: {
     serveStatic: true

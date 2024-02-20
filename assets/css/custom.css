@@ -1,23 +1,4 @@
-.navbar-img-c {
-    display: flex;
-    justify-content: center;
-    width: 10%;
-    height: 40px; 
-   
-}
-.navbar-brand { 
-    display: flex; 
-    justify-content: left;
-    width: 45%;
 
-} 
-.navbar-right { 
-    display: flex; 
-    justify-right: right; 
-    width: 45%;
-    
-    
-} 
 h1,h2,h3,h4 {
     font-family: 'Kaushan Script', serif;
 }

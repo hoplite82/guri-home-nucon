@@ -19,3 +19,10 @@
 // Sections
 @import "./sections/masthead.scss";
 @import "./sections/portfolio.scss";
+
+// Custom
+.bg-rosa {
+    background-color: $bs-body-bg;
+    color: white;
+}
+
