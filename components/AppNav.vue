@@ -1,10 +1,8 @@
 <template>
-<nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
     <div class="container px-3 px-lg-5">
       <div class="navbar-brand mx-auto">
-        <a href="#page-top" class="navbar-img-c mx-3"
-          ><img src="@/img/queen_logo_trans.png" class=""
-        /></a>
+        <a href="#page-top" class="navbar-img-c mx-3"><img src="/img/queen_logo_trans.png" class="" /></a>
       </div>
 
       <a href="#page-top"></a>
@@ -15,8 +13,7 @@
         data-bs-target="#navbarResponsive"
         aria-controls="navbarResponsive"
         aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+        aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -31,6 +28,4 @@
     </div>
   </nav>
 </template>
-<script>
-
-</script>
+<script></script>

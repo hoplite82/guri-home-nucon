@@ -1,13 +1,14 @@
 <template>
    <section class="page-section bg-rosa" id="aboutme">
+
       <div class="container px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
           <div class="col-lg-10 text-center">
             <h2 class="mt-0">Die Chakra-Yoga-Lehrerin</h2>
             <hr class="divider divider-light" />
-            <div class="container">
+            
               <NuxtImg src="/img/nina_boot.jpg" sizes="50vw sm:50vw md:300px lg:500px" />
-              <p class="mb-6 fs-4">
+              <div class="mb-6 fs-4 taj">
                 Hallo, mein Name ist Nina Spiegel und ich bin gelernte medizinische Fachangestellte, 
                 Sozialpädagogin und Yogalehrerin. Durch eine persönliche Lebenskrise die mit gesundheitlichen 
                 Problemen einherging, führte mich mein Lebensweg zum Yoga. Ich merkte schnell, wie ich bereits 
@@ -24,8 +25,8 @@
                    bedeutet mentale Gesundheit. Wenn du dich angesprochen fühlst, freue ich mich dich auf diesem heilsamen Weg
                     zu begleiten.
                 
-              </p>
-            </div>
+              </div>
+            
           </div>
         </div>
       </div>

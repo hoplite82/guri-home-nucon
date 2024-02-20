@@ -2,23 +2,21 @@
  useHead({
   script: [
     { src: "https://identity.netlify.com/v1/netlify-identity-widget.js" },
-  ],
+  ],bodyAttrs: {
+    id: 'page-top'
+  }
 });
 </script>
 
 <template>
   <main>
-   
-    <body id="page-top">
-      
       <AppNav />
       <AppHeader />
       <Services />
       <AboutMe />
       <Chakra />
+      <MarkdownSections />
       <Contact />
       <FooterSite />
-      
-    </body>
   </main>
 </template>

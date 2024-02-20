@@ -17,6 +17,7 @@ collections:
     fields:
       - { label: 'id', name: 'id', widget: 'string' }
       - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'show', name: 'show', widget: 'boolean', default: true }
       - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: 'kurse'
     label: 'kurse'

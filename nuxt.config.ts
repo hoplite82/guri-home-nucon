@@ -23,7 +23,7 @@ export default defineNuxtConfig({
   },
   devtools: { enabled: true },
   modules: ['@nuxt/content', "@nuxt/image"],
-  css: ['@/assets/scss/styles.scss','~/assets/css/custom.css'],
+  css: ['@/assets/scss/styles.scss'],
   nitro: {
     serveStatic: true
   }

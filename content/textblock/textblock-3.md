@@ -1,6 +1,7 @@
 ---
-id: 4
-title: Schach-Yoga
+id: 3
+title: Rauchentwöhnung durch Meditationstechniken
+show: true
 ---
 Die Achtsamkeitsmeditation hilft Dir, Dich zu lösen von Gedanken, von Wahrnehmbarem,
 von Emotionen und auch vom Craving, also letztlich irgendwo dem Verlangen nach
