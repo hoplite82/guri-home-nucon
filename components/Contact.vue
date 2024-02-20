@@ -1,12 +1,11 @@
 <template>
-    <section class="page-section" id="contact">
+    <section class="page-section bg-rosa" id="contact">
       <div class="container px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
           <div class="col-lg-8 col-xl-6 text-center text-white">
             <h2 class="mt-0">Kontakt</h2>
             <hr class="divider" />
             <p class="mb-5">
-              
             </p>
           </div>
         </div>
