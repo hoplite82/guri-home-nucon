@@ -1,9 +1,15 @@
 <script setup>
-function rosaswitch(number) {
-  return number % 2 === 0 ? "bg-rosa" : "";
+function rosaswitch(num) {
+  return num % 2 === 0 ? "bg-rosa" : "";
 }
 // const textblocks = await queryContent("textblock").find();
 </script>
+<style scoped>
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+</style>
 <template>
   <ContentList path="/textblock" v-slot="{ list }">
     

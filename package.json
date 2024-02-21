@@ -17,6 +17,7 @@
     "simplelightbox": "^2.14.2"
   },
   "dependencies": {
+    "@doist/todoist-api-typescript": "^3.0.2",
     "bootstrap": "^5.3.2"
   }
 }
