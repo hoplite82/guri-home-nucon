@@ -29,14 +29,8 @@
 form {
     color:black;
 }
-h1,h2,h3,h4 {
-    font-family: 'Kaushan Script', serif;
-}
-.kaushan {
-    font-family: 'Kaushan Script', serif;
-}
 
-.taj {
+.main-text {
     text-align: justify;
 }
 
@@ -45,3 +39,47 @@ h1,h2,h3,h4 {
     justify-content: center;
     
 }
+.kaushan {
+    font-family: 'Kaushan Script', sans-serif;
+}
+p {
+    text-align: justify;
+}
+h1,h2,h3,h4 {
+    text-align: center;
+}
+
+@media screen {
+    
+}
+body {
+    font-size: 14px;
+}
+@media (min-width: 544px) {  
+    body {
+        font-size: 16px;
+    }
+}
+   
+  /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+  @media (min-width: 768px) {  
+    body {
+        font-size: 18px;
+    }
+  }
+   
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) { 
+    body {
+        font-size: 20px;
+    }
+  }
+   
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {  
+    body {
+        font-size: 22px;
+    }
+  }
+
+

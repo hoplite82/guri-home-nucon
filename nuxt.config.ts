@@ -15,6 +15,9 @@ export default defineNuxtConfig({
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700' },
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic', type: 'text/css' },
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Kaushan Script' },
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Ubuntu Mono' },
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Protest Revolution' },
+
         { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css' },
         { rel: 'icon', href: 'favicon.ico', type: "image/x-icon"  }
       ],
@@ -23,10 +26,13 @@ export default defineNuxtConfig({
   },
   devtools: { enabled: true },
   modules: ['@nuxt/content', "@nuxt/image"],
+  content: {
+    markdown: {
+      anchorLinks: false,
+    }
+  },  
   css: ['@/assets/scss/styles.scss'],
   nitro: {
     serveStatic: true
   }
-
-
 })

@@ -13,8 +13,8 @@
       <AppNav />
       <AppHeader />
       <Services />
-      <AboutMe />
-      <Chakra />
+      <!-- <AboutMe /> -->
+      <!-- <Chakra /> -->
       <MarkdownSections />
       <Contact />
       <FooterSite />

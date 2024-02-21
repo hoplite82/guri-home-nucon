@@ -1,6 +1,8 @@
 ---
 id: 2
+section: aboutme
 title: Die Chakra-Yoga-Lehrerin
+bild: /img/nina_boot.jpg
 show: true
 ---
 Hallo, mein Name ist Nina Spiegel und ich bin gelernte medizinische Fachangestellte,
