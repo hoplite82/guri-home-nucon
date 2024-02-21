@@ -16,6 +16,10 @@ Die Chakren zeigen uns, wie alles zusammen hängt, wir sind weder nur Körper, n
 
 Dysbalancen auf körperlicher oder geistiger Ebene können wir mithilfe der Chakren besser verstehen. Mit dem Chakrensystem habe ich eine Art Fahrplan und die Möglichkeit der Selbstheilung. Innere Ruhe finden wir durch das bewusste Anhalten, Atmen und Beobachten was in dir geschieht, welche Gedanken, Gefühle und Reaktionen zeigen sich. Eigene Themen mit Wahrhaftigkeit anschauen, annehmen und loslassen. Durch die Yogapraxis schaffen wir den Raum uns dessen anzunehmen.
 
+> Block
+
+
+
 ![Bild nicht gefunden](/img/chakras7.png)
 
 1. **Muladhara Chakra - Wurzelchakra**
