@@ -1,7 +1,7 @@
 ---
 id: "6"
 title: test1
-show: true
+show: false
 section: test
 bild: /img/Buddha.png
 ---
