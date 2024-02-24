@@ -13,26 +13,26 @@
           <form id="gur-contactForm" method="POST" data-netlify="true">
             <!-- Name input-->
             <div class="form-floating mb-3">
-              <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+              <input class="form-control" id="name" name="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
               <label for="name">Vor und Nachname</label>
               <div class="invalid-feedback" data-sb-feedback="name:required">Name benötigt</div>
             </div>
             <!-- Email address input-->
             <div class="form-floating mb-3">
-              <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+              <input class="form-control" id="email" name="mail" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
               <label for="email">Email</label>
               <div class="invalid-feedback" data-sb-feedback="email:required">Email benötigt.</div>
               <div class="invalid-feedback" data-sb-feedback="email:email">Email ist nicht valide.</div>
             </div>
             <!-- Phone number input-->
             <div class="form-floating mb-3">
-              <input class="form-control" id="phone" type="tel" placeholder="0156 35850456" data-sb-validations="required" />
+              <input class="form-control" id="phone" name="phone" type="tel" placeholder="0156 35850456" data-sb-validations="required" />
               <label for="phone">Telefonnummer</label>
               <div class="invalid-feedback" data-sb-feedback="phone:required">Telefonnummer erwünscht.</div>
             </div>
             <!-- Message input-->
             <div class="form-floating mb-3">
-              <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+              <textarea class="form-control" id="message" name="massage" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
               <label for="message">Nachricht</label>
               <div class="invalid-feedback" data-sb-feedback="message:required">Nachricht benötigt.</div>
             </div>
