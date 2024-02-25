@@ -21,6 +21,7 @@
           <li class="nav-item"><a class="nav-link" href="#Kurse">Kurse</a></li>
           <li class="nav-item"><a class="nav-link" href="#aboutme">Über mich</a></li>
           <li class="nav-item"><a class="nav-link" href="#chakrayoga">Chakra-Yoga</a></li>
+          <li class="nav-item"><a class="nav-link" href="#chess">Schachtraining</a></li>
           <!--<li class="nav-item"><a class="nav-link" href="#Kurse">Feedbacks</a></li> -->
           <li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
         </ul>

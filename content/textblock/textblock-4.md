@@ -1,11 +1,15 @@
 ---
 id: 4
-title: Schach-Yoga
+title: Schachtraining
 show: false
 section: chess
-bild: /img/schach_queen.png
 ---
-Id consectetur mollit ut mollit eu nulla et magna occaecat. Dolore ad ex elit commodo exercitation quis aliqua sit qui ex. Voluptate dolor eiusmod tempor pariatur amet sunt ut enim. Exercitation est labore est sit sit incididunt esse ut commodo. Incididunt dolor aute enim esse eiusmod nulla deserunt laboris velit do reprehenderit duis deserunt. Ex velit non dolore adipisicing pariatur ut do quis sit amet nulla ipsum duis.
+
+![schachqeen](/img/schach_qeen.png)
+
+[Robert Site](http://pratersch.de)
+
+ mollit ut mollit eu nulla et magna occaecat. Dolore ad ex elit commodo exercitation quis aliqua sit qui ex. Voluptate dolor eiusmod tempor pariatur amet sunt ut enim. Exercitation est labore est sit sit incididunt esse ut commodo. Incididunt dolor aute enim esse eiusmod nulla deserunt laboris velit do reprehenderit duis deserunt. Ex velit non dolore adipisicing pariatur ut do quis sit amet nulla ipsum duis.
 
 Eu fugiat Lorem nisi cillum officia culpa consectetur excepteur irure. Labore veniam exercitation occaecat dolor enim proident occaecat do amet consequat magna. Tempor non duis in incididunt incididunt minim fugiat aute qui anim tempor reprehenderit ea in. Veniam sunt nisi voluptate duis. Eu amet aute culpa cillum amet enim sint id. Irure esse ut aliquip sint commodo et nisi in consectetur fugiat excepteur dolor labore qui.
 
