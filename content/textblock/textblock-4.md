@@ -1,7 +1,7 @@
 ---
 id: 4
 title: Schach-Yoga
-show: true
+show: false
 section: chess
 bild: /img/schach_queen.png
 ---
