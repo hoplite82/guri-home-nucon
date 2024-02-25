@@ -5,7 +5,7 @@ show: true
 section: chess
 ---
 
-![schachqeen](/img/schach_qeen.png)
+![schachqeen](/img/schach_queen.png)
 
 [Robert Site](http://pratersch.de)
 
