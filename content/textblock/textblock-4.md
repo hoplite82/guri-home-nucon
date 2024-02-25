@@ -1,7 +1,9 @@
 ---
 id: 4
 title: Schach-Yoga
-show: false
+show: true
+section: chess
+bild: /img/schach_queen.png
 ---
 Id consectetur mollit ut mollit eu nulla et magna occaecat. Dolore ad ex elit commodo exercitation quis aliqua sit qui ex. Voluptate dolor eiusmod tempor pariatur amet sunt ut enim. Exercitation est labore est sit sit incididunt esse ut commodo. Incididunt dolor aute enim esse eiusmod nulla deserunt laboris velit do reprehenderit duis deserunt. Ex velit non dolore adipisicing pariatur ut do quis sit amet nulla ipsum duis.
 
