@@ -21,7 +21,7 @@ function rosaswitch(num) {
           <hr class="divider divider-light" />
 
           
-          <NuxtImg v-if="tb.bild" src="/img/nina_boot.jpg" sizes="50vw sm:50vw md:300px lg:500px" style="float: left" class="m-2" />
+          <NuxtImg v-if="tb.bild" :src="tb.bild" sizes="50vw sm:50vw md:300px lg:500px" style="float: left" class="m-2" />
          
           <ContentRendererMarkdown :value="tb.body" class="markdown"/>
          
