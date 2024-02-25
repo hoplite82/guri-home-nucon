@@ -1,3 +1,6 @@
+<script setup>
+
+</script>
 <template>
   <section class="page-section bg-rosa" id="contact">
     <div class="container px-4 px-lg-5">
