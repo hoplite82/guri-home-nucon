@@ -1,7 +1,7 @@
 // Docs on event and context https://docs.netlify.com/functions/build/#code-your-function-2
 require("dotenv").config();
-const { MAILGUN_API_KEY, MAILGUN_DOMAIN, MAILGUN_URL, FROM_EMAIL_ADDRESS, CONTACT_TO_EMAIL_ADDRESS } = process.env;
-const mailgun = require("mailgun.js")({ apiKey: MAILGUN_API_KEY, domain: MAILGUN_DOMAIN, url: MAILGUN_URL });
+const { MAILGUN_API_KEY, NETLIFY_EMAILS_MAILGUN_DOMAIN, MAILGUN_URL, FROM_EMAIL_ADDRESS, CONTACT_TO_EMAIL_ADDRESS } = process.env;
+const mailgun = require("mailgun.js")({ apiKey: MAILGUN_API_KEY, domain: NETLIFY_EMAILS_MAILGUN_DOMAIN, url: MAILGUN_URL });
 
 exports.handler = async (event) => {
   if (event.httpMethod !== "POST") {
