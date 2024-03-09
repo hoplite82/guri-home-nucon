@@ -49,7 +49,7 @@ export default defineEventHandler((event) => {
 
 
   return {
-    MAILJET_NINA_PRIVATE, MAILJET_NINA_PUBLIC, mailjetresult
+   mailjetresult
 
 
   }
