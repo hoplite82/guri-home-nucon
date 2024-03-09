@@ -28,7 +28,8 @@ export default defineEventHandler((event) => {
           TextPart: `Name : ${name} E-Mail: ${email} Telefon: ${tel}
           Nachricht:
           ${msg}
-          `
+          `,
+          HtmlPart: `<a src="">In Kontaktlist aufnehmen</a>`
         },
       ],
     }).then((result: { body: any; }) => {
