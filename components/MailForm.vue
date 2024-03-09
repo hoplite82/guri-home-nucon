@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <form>
+    <form >
       <div class="form-group">
         <label htmlFor="name">Name</label>
         <input class="form-control" type="text" id="name" name="name" v-model="name" required />

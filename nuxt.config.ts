@@ -25,14 +25,22 @@ export default defineNuxtConfig({
     },
   },
   devtools: { enabled: true },
-  modules: ['@nuxt/content', "@nuxt/image"],
+  modules: ['@nuxt/content', "@nuxt/image", "nuxt-primevue"],
   content: {
     markdown: {
       anchorLinks: false,
     }
+  }, primevue: {
+    components: {
+      prefix: 'Prime',
+      include: ['Button', 'DataTable']
+    },
+    options: {
+      unstyled: true
+    }
   },
   css: ['@/assets/scss/styles.scss'],
   nitro: {
-    serveStatic: true
+    // serveStatic: true
   }
 })

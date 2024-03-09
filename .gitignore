@@ -9,4 +9,7 @@ node_modules
 dist
 # Local Netlify folder
 .netlify
-sendgrid.env
+bashs
+
+server/middleware
+server/routes/mailsend.ts
