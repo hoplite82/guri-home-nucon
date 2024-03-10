@@ -9,9 +9,19 @@ const name = ref(""),
 
 function sendContactMail() {
   loading.value = true;
-  $fetch("/mailsend", { method: "POST", params: { name: name.value, email: email.value, tel: tel.value, msg: msg.value }, headers: { stupidSec: '45678' } })
-    .then((res) => (responsemsg.value = res + ""))
-    .catch((e) => (responsemsg.value = e));
+  $fetch("/api/mailsend", { method: "POST", params: { name: name.value, email: email.value, tel: tel.value, msg: msg.value }, headers: { stupidSec: '45678' } })
+    .then((r) =>  {
+      
+      const resdiv = document.getElementById("response-ms")
+      // if(resdiv)  resdiv.innerText = r.res  
+     
+      responsemsg.value = r.mailjetresult
+      
+    }
+      
+      
+      )
+    .catch((e) => (responsemsg.value = e+""));
   loading.value = false;
 }
 
@@ -55,7 +65,8 @@ function sendContactMail() {
             <!-- has successfully submitted-->
             <div id="submitSuccessMessage">
               <div v-if="loading" class="fw-bolder text-center mb-3">Waiting</div>
-              <div v-if="responsemsg" class="fw-bolder text-center mb-3">{{ responsemsg }}</div>
+              <div v-if="responsemsg" class="fw-bolder text-center mb-3">{{ responsemsg }}</div> 
+              <!-- <div id="response-msg" class="fw-bolder text-center mb-3"></div> -->
             </div>
             <!-- Submit Button-->
             <div class="d-grid col-6 mx-auto">

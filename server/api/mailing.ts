@@ -1,13 +1,7 @@
-
 import Client from 'node-mailjet';
 
-
 export default defineEventHandler((event) => {
-  
   const {name,email,tel,msg} = getQuery(event)
- 
-  
-
   const { MAILJET_NINA_PUBLIC, MAILJET_NINA_PRIVATE, MAILJET_SENDER,CONTACT_TO_EMAIL_ADDRESS } = process.env
   let mailjetresult
   if (MAILJET_NINA_PRIVATE && MAILJET_NINA_PUBLIC && MAILJET_SENDER && CONTACT_TO_EMAIL_ADDRESS) {
@@ -16,7 +10,7 @@ export default defineEventHandler((event) => {
         {
           From: {
             Email: MAILJET_SENDER,
-            Name: 'Robert',
+            Name: 'Contact-Form from yoga-spiegel.de',
           },
           To: [
             {
@@ -28,8 +22,8 @@ export default defineEventHandler((event) => {
           TextPart: `Name : ${name} E-Mail: ${email} Telefon: ${tel}
           Nachricht:
           ${msg}
-          `,
-          HtmlPart: `<a src="">In Kontaktlist aufnehmen</a>`
+          `
+          // HtmlPart: `<a src="">In Kontaktlist aufnehmen</a>`
         },
       ],
     }).then((result: { body: any; }) => {
