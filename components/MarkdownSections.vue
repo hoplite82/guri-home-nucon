@@ -22,7 +22,7 @@ function rosaswitch(num) {
 
           
           <NuxtImg v-if="tb.bild" :src="tb.bild" sizes="50vw sm:50vw md:300px lg:500px" style="float: left" class="m-2" />
-         
+          
           <ContentRendererMarkdown :value="tb.body" class="markdown"/>
          
         </div>

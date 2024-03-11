@@ -1,3 +1,18 @@
+<script setup lang="ts">
+const user = ref({})
+onMounted(()=> {
+    netlifyIdentity.init({locale: 'de'})
+    user.value = netlifyIdentity.currentUser()     
+
+  })
+
+
+
+function openLog(){
+  netlifyIdentity.open('login')
+}
+
+</script>
 <template>
   <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
     <div class="container px-3 px-lg-5">
@@ -24,9 +39,15 @@
           <li class="nav-item"><a class="nav-link" href="#chess">Schachtraining</a></li>
           <!--<li class="nav-item"><a class="nav-link" href="#Kurse">Feedbacks</a></li> -->
           <li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
+          <li class="nav-item">
+            <button v-if="user" class="btn btn-primary" @click="openLog">Abmelden</button>
+            <button v-else class="btn btn-primary" @click="openLog">Einloggen</button>
+          </li>
+          
         </ul>
       </div>
     </div>
   </nav>
 </template>
-<script></script>
+
+

@@ -21,7 +21,11 @@ export default defineNuxtConfig({
         { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css' },
         { rel: 'icon', href: 'favicon.ico', type: "image/x-icon" }
       ],
-      script: [{ src: 'scripts.js' }, { src: 'https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js' }, { src: 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js' }, { src: "https://identity.netlify.com/v1/netlify-identity-widget.js" }]
+      script: [
+        { src: 'scripts.js' }, { src: 'https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js' },
+        { src: 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js' }, 
+        { type: "text/javascript", src: "https://identity.netlify.com/v1/netlify-identity-widget.js" }
+      ]
     },
   },
   devtools: { enabled: true },
@@ -41,6 +45,6 @@ export default defineNuxtConfig({
   },
   css: ['@/assets/scss/styles.scss'],
   nitro: {
-    // serveStatic: true
+    serveStatic: true
   }
 })
