@@ -1,16 +1,16 @@
 <script setup lang="ts">
-const user = ref({})
-onMounted(()=> {
-    netlifyIdentity.init({locale: 'de'})
-    user.value = netlifyIdentity.currentUser()     
+// const user = ref({})
+// onMounted(()=> {
+//     netlifyIdentity.init({locale: 'de'})
+//     user.value = netlifyIdentity.currentUser()     
 
-  })
+//   })
 
 
 
-function openLog(){
-  netlifyIdentity.open('login')
-}
+// function openLog(){
+//   netlifyIdentity.open('login')
+// }
 
 </script>
 <template>
@@ -39,10 +39,10 @@ function openLog(){
           <li class="nav-item"><a class="nav-link" href="#chess">Schachtraining</a></li>
           <!--<li class="nav-item"><a class="nav-link" href="#Kurse">Feedbacks</a></li> -->
           <li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <button v-if="user" class="btn btn-primary" @click="openLog">Abmelden</button>
             <button v-else class="btn btn-primary" @click="openLog">Einloggen</button>
-          </li>
+          </li> -->
           
         </ul>
       </div>

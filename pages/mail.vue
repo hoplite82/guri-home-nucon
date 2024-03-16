@@ -1,30 +1,24 @@
 <script setup lang="ts">
+const responsemsg = ref("responsemsg")
+const contactfrom = ref<HTMLFormElement | undefined>(undefined)
+let loading = ref(false)
 
-const loading = ref(false);
-const responsemsg = ref("");
-const name = ref(""),
-  email = ref(""),
-  tel = ref(""),
-  msg = ref("");
+async function sendMail() {
+  loading.value = true
+  if (contactfrom.value instanceof HTMLFormElement) {
 
-function sendContactMail() {
-  loading.value = true;
-  $fetch("/api/mailsend", { method: "POST", params: { name: name.value, email: email.value, tel: tel.value, msg: msg.value }, headers: { stupidSec: '45678' } })
-    .then((r) =>  {
-      
-      const resdiv = document.getElementById("response-ms")
-      // if(resdiv)  resdiv.innerText = r.res  
-     
-      responsemsg.value = r.mailjetresult
-      
-    }
-      
-      
-      )
-    .catch((e) => (responsemsg.value = e+""));
-  loading.value = false;
+    const formdata = new FormData(contactfrom.value)
+    const { data, pending, error } = await useFetch(".netlify/functions/hello-world", { method: "post", body: formdata })
+    setAnswer(data?.value + "")
+    
+
+  }
+  loading.value = false
 }
 
+function setAnswer(ans: string) {
+  responsemsg.value = ans
+}
 </script>
 <template>
   <section class="page-section bg-rosa" id="contact">
@@ -38,43 +32,44 @@ function sendContactMail() {
       </div>
       <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
         <div class="col-lg-6">
-          <form id="guri-contact-form" @submit.prevent="sendContactMail">
+          <form ref="contactfrom" id="guri-contact-form" >
             <!-- Name input-->
             <div class="form-floating mb-3">
-              <input class="form-control" id="name" name="name" type="text" placeholder="Vorname Nachname" v-model="name" required />
+              <input class="form-control" id="name" name="name" type="text" placeholder="Vorname Nachname" required />
               <label for="name">Vor und Nachname</label>
             </div>
             <!-- Email address input-->
             <div class="form-floating mb-3">
-              <input class="form-control" id="emailinput" name="mail" type="email" placeholder="name@example.com" v-model="email" required />
+              <input class="form-control" id="emailinput" name="email" type="email" placeholder="name@example.com" required />
               <label for="emailinput">Email</label>
             </div>
             <!-- Phone number input-->
             <div class="form-floating mb-3">
-              <input class="form-control" id="phone" name="phone" type="tel" placeholder="0156 35850456" v-model="tel"/>
+              <input class="form-control" id="phone" name="tel" type="tel" placeholder="0156 35850456" />
               <label for="phone">Telefonnummer</label>
             </div>
             <!-- Message input-->
             <div class="form-floating mb-3">
-              <textarea type="textarea" class="form-control" id="message" name="massage" placeholder="Enter your message here..." style="height: 10rem" v-model="msg" ></textarea>
+              <textarea type="textarea" class="form-control" id="message" name="msg" placeholder="Enter your message here..." style="height: 10rem" ></textarea>
               <label for="message">Nachricht</label>
             </div>
-            <!-- Submit success message-->
-            <!---->
-            <!-- This is what your users will see when the form-->
-            <!-- has successfully submitted-->
+          
+           
+           
+           
+              
+              
+            
+           
+          </form>
+          <div class="d-grid col-6 mx-auto">
             <div id="submitSuccessMessage">
               <div v-if="loading" class="fw-bolder text-center mb-3">Waiting</div>
               <div v-if="responsemsg" class="fw-bolder text-center mb-3">{{ responsemsg }}</div> 
               <!-- <div id="response-msg" class="fw-bolder text-center mb-3"></div> -->
-            </div>
-            <!-- Submit Button-->
-            <div class="d-grid col-6 mx-auto">
-              
-              <PrimeButton class="btn btn-primary rounded-pill " icon="pi pi-send" type="submit" label="Submit" :loading="loading" />
-            </div>
-           
-          </form>
+            </div>  
+          <PrimeButton @click="sendMail" class="btn btn-primary rounded-pill " icon="pi pi-send" type="submit" label="Submit" />
+        </div>
         </div>
       </div>
       <div class="row gx-4 gx-lg-5 justify-content-center">

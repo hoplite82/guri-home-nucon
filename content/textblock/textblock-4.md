@@ -1,7 +1,7 @@
 ---
 id: 4
 title: Schachtraining
-show: true
+show: false
 section: chess
 ---
 

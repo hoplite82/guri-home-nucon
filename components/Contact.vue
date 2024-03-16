@@ -1,5 +1,24 @@
-<script setup>
+<script setup lang="ts">
+const responsemsg = ref("")
+const contactfrom = ref<HTMLFormElement | undefined>(undefined)
+let loading = ref(false)
 
+async function sendMail() {
+  loading.value = true
+  if (contactfrom.value instanceof HTMLFormElement) {
+
+    const formdata = new FormData(contactfrom.value)
+    const { data, pending, error } = await useFetch(".netlify/functions/hello-world", { method: "post", body: formdata })
+    setAnswer(data?.value + "")
+    
+
+  }
+  loading.value = false
+}
+
+function setAnswer(ans: string) {
+  responsemsg.value = ans
+}
 </script>
 <template>
   <section class="page-section bg-rosa" id="contact">
@@ -13,64 +32,46 @@
       </div>
       <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
         <div class="col-lg-6">
-          <form id="gur-contactForm" method="POST" data-netlify="true">
+          <form ref="contactfrom" id="guri-contact-form" >
             <!-- Name input-->
             <div class="form-floating mb-3">
-              <input class="form-control" id="name" name="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+              <input class="form-control" id="name" name="name" type="text" placeholder="Vorname Nachname" required />
               <label for="name">Vor und Nachname</label>
-              <div class="invalid-feedback" data-sb-feedback="name:required">Name benötigt</div>
             </div>
             <!-- Email address input-->
             <div class="form-floating mb-3">
-              <input class="form-control" id="email" name="mail" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-              <label for="email">Email</label>
-              <div class="invalid-feedback" data-sb-feedback="email:required">Email benötigt.</div>
-              <div class="invalid-feedback" data-sb-feedback="email:email">Email ist nicht valide.</div>
+              <input class="form-control" id="emailinput" name="email" type="email" placeholder="name@example.com" required />
+              <label for="emailinput">Email</label>
             </div>
             <!-- Phone number input-->
             <div class="form-floating mb-3">
-              <input class="form-control" id="phone" name="phone" type="tel" placeholder="0156 35850456" data-sb-validations="required" />
+              <input class="form-control" id="phone" name="tel" type="tel" placeholder="0156 35850456" />
               <label for="phone">Telefonnummer</label>
-              <div class="invalid-feedback" data-sb-feedback="phone:required">Telefonnummer erwünscht.</div>
             </div>
             <!-- Message input-->
             <div class="form-floating mb-3">
-              <textarea class="form-control" id="message" name="massage" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+              <textarea type="textarea" class="form-control" id="message" name="msg" placeholder="Enter your message here..." style="height: 10rem" ></textarea>
               <label for="message">Nachricht</label>
-              <div class="invalid-feedback" data-sb-feedback="message:required">Nachricht benötigt.</div>
             </div>
-            <!-- Submit success message-->
-            <!---->
-            <!-- This is what your users will see when the form-->
-            <!-- has successfully submitted-->
-            <div class="d-none" id="submitSuccessMessage">
-              <div class="text-center mb-3">
-                <div class="fw-bolder">Nachricht übertragen.</div>
-                Muss noch aktiviert werden.
-                <br />
-                <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-              </div>
-            </div>
-            <!-- Submit error message-->
-            <!---->
-            <!-- This is what your users will see when there is-->
-            <!-- an error submitting the form-->
-            <div class="d-none" id="submitErrorMessage">
-              <div class="text-center text-danger mb-3">Error sending message!</div>
-            </div>
-            <!-- Submit Button-->
-            <div class="d-grid">
-              <button class="btn btn-primary btn-xl" id="submitButton" type="submit">Submit</button>
-            </div>
+           
           </form>
+          <div class="d-grid col-6 mx-auto">
+            <div id="submitSuccessMessage">
+              <div v-if="loading" class="fw-bolder text-center mb-3">Waiting</div>
+              <div v-if="responsemsg" class="fw-bolder text-center mb-3">{{ responsemsg }}</div> 
+              <!-- <div id="response-msg" class="fw-bolder text-center mb-3"></div> -->
+            </div>  
+          <PrimeButton @click="sendMail" class="btn btn-primary rounded-pill " icon="pi pi-send" type="submit" label="Submit" />
+        </div>
         </div>
       </div>
-      <div class="row gx-4 gx-lg-5 justify-content-center">
+      <!-- <div class="row gx-4 gx-lg-5 justify-content-center">
         <div class="col-lg-4 text-center mb-5 mb-lg-0">
           <i class="bi-phone fs-2 mb-3 text-muted"></i>
           <div>0176 30678459</div>
         </div>
-      </div>
+      </div> -->
     </div>
   </section>
 </template>
+
